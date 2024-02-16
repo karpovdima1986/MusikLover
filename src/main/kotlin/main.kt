@@ -1,7 +1,7 @@
 package ru.netology
 
 fun main() {
-    val amount = 20_000
+    val amount = 2_000
     val customer = true
 
 
@@ -11,7 +11,7 @@ fun main() {
         amount - (amount * 5 / 100)
     } else amount)
 
-    val discountCustomer = if (customer) discount * 1 / 100 else discount
+    val discountCustomer = if (customer) discount - (discount * 1 / 100) else discount
 
     println("Стоимость покупки $discountCustomer руб.")
 }
